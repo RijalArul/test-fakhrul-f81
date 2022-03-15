@@ -1,0 +1,12 @@
+const router = require('express').Router()
+const companyRoutes = require('./company')
+const employeeRoutes = require('./employee')
+const fiboRoutes = require('./fibo')
+const combineRoutes = require('./combination')
+const countryRoutes = require('./country')
+router.use('/companies', companyRoutes)
+router.use('/employees', employeeRoutes)
+router.use('/fibonacci', fiboRoutes)
+router.use('/combination', combineRoutes)
+router.use('/countries', countryRoutes)
+module.exports = router
